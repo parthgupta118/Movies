@@ -43,3 +43,330 @@
 
             </div>
         </div>
+    
+   <div class="Explore">
+            <div class="Explore__container">
+                <div class="Explore__Heading" id="movies">
+                    Popular Movies
+                </div>
+    
+                <div class="Cards" ng-init="movies = [
+                        { 
+
+                            img: './assets/Pic__17.jpg', 
+                            img1: './assets/Pic__3.jpg', 
+                            name: 'The Old Guard', 
+                            date: '10 Jul 2020', 
+                            rating: '4.5'
+                        },
+
+                        {
+                            img: './assets/Pic__4.jpg',
+                            img1: './assets/Pic__4.jpg',
+                            name: 'You got this',
+                            date: '02 Oct 2020',
+                            rating: '4.5'
+                        },
+                         
+                        {
+                            img: './assets/Pic__5.jpg',
+                            img1: './assets/Pic__5.jpg',
+                            name: 'The Queen Gambit',
+                            date: '23 Oct 2020' ,
+                            rating: '4.2'
+                        },
+                         
+                        {
+                            img: './assets/Pic__6.jpg',
+                            img1: './assets/Pic__6.jpg',
+                            name: 'Cobra Kai',
+                            date: '02 May 2018',
+                            rating: '3.9'
+                        },
+                         
+                        {
+                            img: './assets/Pic__7.jpg',
+                            img1: './assets/Pic__7.jpg',
+                            name: 'The Walking Dead:World Beyond',
+                            date: '04 Oct 2020',
+                            rating: '4.2'
+                        },
+                         
+                        {
+                            img: './assets/Pic__8.jpg',
+                            img1: './assets/Pic__8.jpg',
+                            name: 'Unknown Origins',
+                            date: '28 Aug 2020',
+                            rating: '4.1'
+                        },
+                         
+                        {
+                            img: './assets/Pic__9.jpg',
+                            img1: './assets/Pic__9.jpg',
+                            name: 'The Vampire Diaries',
+                            date: '10 Sep 2009',
+                            rating: '4.2'
+                        },
+                         
+                        {
+                            img: './assets/Pic__10.jpg',
+                            img1: './assets/Pic__10.jpg',
+                            name: 'It Chapter Two',
+                            date: '04 Sep 2019',
+                            rating: '2.9'
+                        },
+                         
+                        {
+                            img: './assets/Pic__11.jpg',
+                            img1: './assets/Pic__11.jpg',
+                            name: 'Project Power',
+                            date: '14 Aug 2020',
+                            rating: '4.2'
+                        },
+                         
+                        {
+                            img: './assets/Pic__12.jpg',
+                            img1: './assets/Pic__12.jpg',
+                            name: 'Supernatural',
+                            date: '13 Sep 2005',
+                            rating: '4.5'
+                        },
+                         
+                        {
+                            img: './assets/Pic__13.jpg',
+                            img1: './assets/Pic__13.jpg',
+                            name: 'The Crimes That Blind',
+                            date: '20 Aug 2020',
+                            rating: '4.5'
+                        },
+                         
+                        {
+                            img: './assets/Pic__14.jpg',
+                            img1: './assets/Pic__14.jpg',
+                            name: 'The Walking Dead',
+                            date: '31 Oct 2010',
+                            rating: '4.1'
+                        },
+                         
+                        {
+                            img: './assets/Pic__15.jpg',
+                            img1: './assets/Pic__15.jpg',
+                            name: 'Cadaver',
+                            date: '22 Oct 2020',
+                            rating: '3.6'
+                        },
+                         
+                        {
+                            img: './assets/Pic__16.jpg',
+                            img1: './assets/Pic__16.jpg',
+                            name: 'Greyhound',
+                            date: '10 Jul 2020',
+                            rating: '3.3'
+                        }
+                    ]">
+    
+                    <a href="#home" class="Card__1" ng-repeat="movie in movies" ng-controller="name" ng-click="changeHome()">
+                        <img ng-src="{{ movie.img1 }}" ng-alt="{{ movie.img }}">
+                        <div>
+                            <h2>{{ movie.name }}</h2>
+                            <h4>{{ movie.date }}</h4>
+                            <h4>Rating: {{ movie.rating }}</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="Explore__Heading" id="trailers">
+                Latest Trailers
+            </div>
+
+            <div class="Cards__2" ng-init="trailers = [
+            { img: './assets/Pic__30.jpg', name: 'Boogie Nights', info: 'Modern Trailer'},
+            { img: './assets/Pic__31.jpg', name: 'The Endless Trench', info: 'Official Trailer | Netflix'},
+            { img: './assets/Pic__32.jpg', name: 'Virgin River', info: 'Season 2 Trailer'},
+            { img: './assets/Pic__33.jpg', name: 'The Crown', info: 'Season 4 Trailer'},
+            { img: './assets/Pic__34.jpg', name: 'The Mandalorian', info: 'Season 2 Special Look'},
+        ]">
+
+                <div class="Card__2" ng-repeat=" trailer in trailers" ng-controller="name" ng-click="changeHome()">
+                    <div class="image">
+                        <img ng-src="{{ trailer.img }}" ng-alt="{{ movie.img }}">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div>
+                        <h2>{{ trailer.name }}</h2>
+                        <h4>{{ trailer.info }}</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Explore__Heading" id="extras">
+                Free To Watch
+            </div>
+
+            <div class="Cards" ng-init="free=[
+            { 
+                img1: './assets/Pic__35.jpg', 
+                name: 'The Scientist',
+                date: '21 Sep 2020', 
+                rating: '4.5'
+            },
+
+            {
+                img1: './assets/Pic__36.jpg',
+                name: 'Away',
+                date: '15 Nov 2019',
+                rating: '4.1'
+            },
+             
+            {
+                img1: './assets/Pic__38.jpg',
+                name: 'ABCs of Death',
+                date: '8 Mar 2013',
+                rating: '3.5'
+            },
+             
+            {
+                img1: './assets/Pic__39.jpg',
+                name: 'Assassin 33 AD',
+                date: '24 Jan 2020',
+                rating: '4.5'
+            },
+             
+            {
+                img1: './assets/Pic__40.jpg',
+                name: 'High Tension',
+                date: '18 Jun 2003',
+                rating: '4.2'
+            },
+             
+            {
+                img1: './assets/Pic__41.jpg',
+                name: 'The Dalton Gang',
+                date: '05 May 2020',
+                rating: '4.5'
+            },
+
+            {
+                img1: './assets/Pic__37.jpg',
+                name: 'Fat Ass Zombies',
+                date: '18 Feb 2020',
+                rating: '2.5'
+            },
+             
+            {
+                img1: './assets/Pic__42.jpg',
+                name: 'Battlefield 2025',
+                date: '07 July 2019',
+                rating: '2.9'
+            },
+             
+            {
+                img1: './assets/Pic__43.jpg',
+                name: 'The Viking War',
+                date: '15 Oct 2019',
+                rating: '4.3'
+            },
+             
+            {
+                img1: './assets/Pic__43.jpg',
+                name: 'Antrum',
+                date: '13 Sep 2005',
+                rating: '4.5'
+            }
+        ]">
+
+                <a href="home" class="Card__1" ng-repeat="movie in free" ng-controller="name" ng-click="changeHome()">
+                    <img ng-src="{{ movie.img1 }}" ng-alt="{{ movie.img }}">
+                    <div>
+                        <h2>{{ movie.name }}</h2>
+                        <h4>{{ movie.date }}</h4>
+                        <h4>{{ movie.rating }}</h4>
+                    </div>
+                </a>
+            
+            </div>
+
+            <div class="Explore__Heading" id="extras">
+                Trending This Week
+            </div>
+
+            <div class="Cards" ng-init="trending=[
+            { 
+                img1: './assets/Pic__44.jpg', 
+                name: 'The Mandalorian', 
+                date: '12 Nov 2019',
+                rating: '4.5'
+            },
+
+            {
+                img1: './assets/Pic__45.jpg',
+                name: 'His House',
+                date: '23 Jan 2020',
+                rating: '4.3'
+            },
+             
+            {
+                img1: './assets/Pic__46.jpg',
+                name: 'Rogue City',
+                date: '23 Oct 2020' ,
+                rating: '4.1'
+            },
+             
+            {
+                img1: './assets/Pic__47.jpg',
+                name: 'Holidate',
+                date: '02 May 2018',
+                rating: '4.2'
+            },
+             
+            {
+                img1: './assets/Pic__48.jpg',
+                name: 'Borat',
+                date: '04 Oct 2020',
+                rating: '4.0'
+            },
+             
+            {
+                img1: './assets/Pic__49.jpg',
+                name: 'The Witches',
+                date: '28 Aug 2020',
+                rating: '4.5'
+            },
+             
+            {
+                img1: './assets/Pic__50.jpg',
+                name: 'Mulan',
+                date: '10 Sep 2020',
+                rating: '3.9'
+            },
+             
+            {
+                img1: './assets/Pic__51.jpg',
+                name: 'The Craft: Legacy',
+                date: '04 Sep 2019',
+                rating: '3.8'
+            },
+             
+            {
+                img1: './assets/Pic__52.jpg',
+                name: 'Truth Seekers',
+                date: '30 Oct 2020',
+                rating: '4.1'
+            }
+                ]">
+
+                <a href="home" class="Card__1" ng-repeat="movie in trending" ng-controller="name" ng-click="changeHome()">
+                    <img ng-src="{{ movie.img1 }}" ng-alt="{{ movie.img }}">
+                    <div>
+                        <h2>{{ movie.name }}</h2>
+                        <h4>{{ movie.date }}</h2>
+                        <h4>{{ movie.rating }}</h2>
+                        
+                    </div>
+                </a>
+            
+            </div>
+            
+        </div>
