@@ -1,0 +1,394 @@
+@font-face { 
+    font-family: Sketch; src: url('./assets/Sketch.ttf'); 
+}
+
+@font-face { 
+    font-family: Breaking Bad; src: url('./assets/Heart\ Breaking\ Bad.otf'); 
+}
+
+@font-face { 
+    font-family: Bad Grunge; src: url('./assets/BAD\ GRUNGE.ttf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Page__Container {
+    overflow-x: hidden;
+    font-family: "Bad Grunge";
+}
+
+.HomePage {
+    width: 100%;
+    position: relative;
+
+}
+
+/* NavBar Styling */
+
+.Navbar {
+    height: 4.5rem;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bad Grunge";
+    padding: 0rem 2rem;
+    width: 100%;
+    background: linear-gradient(to top,#1d2427, #28292b);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.Logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.Navbar--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar--left a {
+    text-decoration: none;
+    color: #ffffffd5;
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    transition: all 0.5s ease;
+}
+
+.Navbar--left img {
+    margin-left: 2rem;
+}
+
+.Navbar--left a:hover {
+    color: #5e8669;
+}
+
+
+
+.Navbar--left img {
+    width: 5rem;
+    height: 2.5rem;
+}
+
+
+/* HomePage Styling */
+
+.Home__img {
+    position: absolute;
+    z-index: -1;
+    top: 4rem;
+    left: 0;
+}
+
+.Home__img img {
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.Home__content {
+    height: 100vh;
+    padding: 0rem 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom,rgba(20, 20, 20, 0) 50% , rgba(20, 20, 20, 0.883));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.877),  rgba(0, 0, 0, 0.075));
+}
+
+.Home__content--small {
+    min-width: 20rem;
+    max-width: 60rem;
+    color: rgba(245, 245, 245, 0.897);
+    font-size: 1.7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 6rem;
+    word-spacing: 10px;
+    font-family: 'Sketch';
+}
+
+.Home__content--large {
+    font-size: 7rem;
+    color: #e4d722;
+    width: 40rem;
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 6px;
+}
+
+.Explore {
+    background-color: #141414;
+    width: 85%;
+    padding: 0 10vw;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+
+.Explore__container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.Explore__Heading {
+    width: max-content;
+    margin: 4rem 0rem 2rem 0rem;
+    padding: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-family: 'Bad Grunge';
+    position: relative;
+    /* border-bottom: 8px solid yellow; */
+}
+
+/* Cards Styling */
+
+
+.Cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.Card__1 {
+    margin: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    position: relative;
+    /* overflow: hidden; */
+    color: white;
+    width: 15rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+
+.Card__1 div {
+    transition: all 0.3s ease;
+}
+
+.Card__1 img {
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Card__1:hover {
+    cursor: pointer;
+    transform: scale(1.05) translateY(-1rem);
+}
+
+.Card__1:hover div {
+    background-color: rgba(255, 255, 255, 0.685);
+    backdrop-filter: blur(10px);
+    color: black;
+}
+
+.Card__1:hover img {
+    box-shadow: 10px 10px 20px rgb(27, 27, 27), -10px -10px 20px rgb(27, 27, 27);
+}
+
+.Card__1 div  {
+    padding: 0.5rem 0.5rem 1.2rem 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+.Card__1 h2 {
+    font-weight: 100;
+    font-family: "Bad Grunge";
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.Card__1 h4 {
+    font-family: Helvetica,sans-serif;
+    color: grey;
+    word-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.Cards__2 {
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Cards__2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Card__2 {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Card__2 h4 {
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Card__2 .image:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.Card__2 div {
+    margin-top: 1rem;
+}
+
+.Card__2 h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+
+
+.Footer {
+    height: 14rem;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 2rem;
+    background-color: #000000;
+}
+
+.Footer--left {
+    flex: 0.15;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Footer--left img {
+    width: 10rem;
+    height: 4.5rem;
+    object-fit: cover;
+}
+
+.Footer--middle {
+    flex: 0.2;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer--middle img {
+    color: #ffffff;
+    height: 5rem;
+    width: 10rem;
+}
+
+.Footer--left {
+    flex: 0.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Footer a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Bad Grunge";
+}
+
+.Footer a:hover {
+    color: yellow;
+}
+
+/* Media Queries for Responsive Design of Webpage */
+
+@media screen and (max-width: 780px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .Navbar--middle {
+        display: none;
+    }
+
+    .Navbar--left {
+        flex: 0.8;
+    }
+
+    .Cards {
+        width: 90%;
+    }
+}
