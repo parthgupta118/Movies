@@ -20,14 +20,12 @@ html {
 }
 
 .Page__Container {
-    overflow-x: hidden;
     font-family: "Bad Grunge";
 }
 
 .HomePage {
     width: 100%;
     position: relative;
-
 }
 
 /* NavBar Styling */
@@ -37,15 +35,16 @@ html {
     width: 100%;
     display: flex;
     flex-flow: row;
-    box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
     font-family: "Bad Grunge";
     padding: 0rem 2rem;
+    overflow: hidden;
     background: linear-gradient(to top,#1d2427, #28292b);
     backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 2;
 }
 
@@ -89,25 +88,30 @@ html {
 /* HomePage Styling */
 
 .Home__img {
-    position: absolute;
-    z-index: -1;
-    top: 4rem;
-    left: 0;
+    width: 100vw;
+    color: transparent;
+    overflow: hidden;
 }
 
 .Home__img img {
-    width: 100vw;
-    height: 95vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 4.5rem;
+    left: 0;
 }
 
 .Home__content {
+    width: 100%;
     height: 100vh;
-    padding: 0rem 5%;
+    box-sizing: border-box;
+    padding-left: 5rem;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
-    background: linear-gradient(to bottom,rgba(20, 20, 20, 0) 50% , rgba(20, 20, 20, 0.883));
+    /* background: linear-gradient(to bottom,rgba(20, 20, 20, 0) 50% , rgba(20, 20, 20, 0.883)); */
     background: linear-gradient(to right, rgba(0, 0, 0, 0.877),  rgba(0, 0, 0, 0.075));
 }
 
@@ -126,7 +130,8 @@ html {
 .Home__content--large {
     font-size: 7rem;
     color: #e4d722;
-    width: 40rem;
+    max-width: 40rem;
+    min-width: 20rem;
     line-height: 5rem;
     margin-bottom: 1.5rem;
     letter-spacing: 6px;
@@ -134,7 +139,8 @@ html {
 
 .Explore {
     background-color: #141414;
-    width: 100%;
+    width: 80%;
+    padding: 0 10%;
     padding-bottom: 4rem;
     display: flex;
     flex-flow: column;
@@ -280,6 +286,7 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
 .image {
     width: 20rem;
     height: 15rem;
@@ -297,6 +304,7 @@ html {
     z-index: 2;
     color: white;
     font-size: 2rem;
+    z-index: 1;
 }
 
 .image img {
