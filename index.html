@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="https://kit.fontawesome.com/7e453e5ecd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./assets/Logo.svg">
+    <link rel="icon" type="image/png" href="./assets/icon.svg">
     <script src="./main.js"></script>
     <title>Fox Movies | The Complete Guide</title>
 </head>
@@ -14,25 +14,24 @@
     <div class="Page__Container">
         <div class="HomePage">
             <div class="Navbar">
-                 <div class="Logo">
+                <div class="Logo">
                     <a href="#"><img src="./assets/Logo.svg" alt=""></a>
-                 </div>
-                
+                </div>
+
                 <div class="Hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
-                
+
                 <div class="Navbar--left">
-                    <a href="#">home</a>
+                    <a href="#home">home</a>
                     <a href="#movies">Movies</a>
                     <a href="#trailers">Trailers</a>
+
                     <a href="#support">Support</a>
                 </div>
-
-                </div>
             </div>
-        
-        <div class="Home__img" >
+
+            <div class="Home__img">
                 <img ng-src="{{ img }}" alt="" ng-init="img = './assets/Pic__2.jpg'">
             </div>
 
@@ -47,8 +46,8 @@
 
             </div>
         </div>
-    
-   <div class="Explore">
+
+        <div class="Explore">
             <div class="Explore__container">
                 <div class="Explore__Heading" id="movies">
                     Popular Movies
@@ -61,111 +60,125 @@
                             img1: './assets/Pic__3.jpg', 
                             name: 'The Old Guard', 
                             date: '10 Jul 2020', 
-                            rating: '4.5'
+                            rating: '4.5',
+                            description: 'Four undying warriors who have secretly protected humanity for centuries become targeted for their mysterious powers just as they discover a new immortal.'
                         },
 
                         {
-                            img: './assets/Pic__4.jpg',
+                            img: './assets/Pic__18.jpeg',
                             img1: './assets/Pic__4.jpg',
                             name: 'You got this',
                             date: '02 Oct 2020',
-                            rating: '4.5'
+                            rating: '4.5',
+                            description: 'An ad creative and a successful exec have a great marriage — until he wants to be a dad just as her star is rising. Then he brings someone new home.'
                         },
                          
                         {
-                            img: './assets/Pic__5.jpg',
+                            img: './assets/Pic__19.jpg',
                             img1: './assets/Pic__5.jpg',
                             name: 'The Queen Gambit',
                             date: '23 Oct 2020' ,
-                            rating: '4.2'
+                            rating: '4.2',
+                            description: 'In a Kentucky orphanage in the 1950s, a young girl discovers an astonishing talent for chess while struggling with addiction.'
                         },
                          
                         {
-                            img: './assets/Pic__6.jpg',
+                            img: './assets/Pic__20.jpg',
                             img1: './assets/Pic__6.jpg',
                             name: 'Cobra Kai',
                             date: '02 May 2018',
-                            rating: '3.9'
+                            rating: '3.9',
+                            description: 'This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.'
                         },
                          
                         {
-                            img: './assets/Pic__7.jpg',
+                            img: './assets/Pic__21.jpg',
                             img1: './assets/Pic__7.jpg',
                             name: 'The Walking Dead:World Beyond',
                             date: '04 Oct 2020',
-                            rating: '4.2'
+                            rating: '4.2',
+                            description: 'A heroic group of teens sheltered from the dangers of the post-apocalyptic world receive a message that inspires them to leave the safety of the only home they have ever known and embark on a cross-country journey to find the one man who can possibly save the world.'
                         },
                          
                         {
-                            img: './assets/Pic__8.jpg',
+                            img: 'https://cdn.thenationroar.com/wp-content/uploads/2020/09/Netflix_Unknown_Origins-1920x1219.jpg',
                             img1: './assets/Pic__8.jpg',
                             name: 'Unknown Origins',
                             date: '28 Aug 2020',
-                            rating: '4.1'
+                            rating: '4.1',
+                            description: 'In Madrid, Spain, a mysterious serial killer ruthlessly murders his victims by recreating the first appearance of several comic book superheroes. Cosme, a veteran police inspector who is about to retire, works on the case along with the tormented inspector David Valentín and his own son Jorge Elías, a nerdy young man who owns a comic book store.'
                         },
                          
                         {
-                            img: './assets/Pic__9.jpg',
+                            img: 'https://images7.alphacoders.com/731/731801.jpg',
                             img1: './assets/Pic__9.jpg',
                             name: 'The Vampire Diaries',
                             date: '10 Sep 2009',
-                            rating: '4.2'
+                            rating: '4.2',
+                            description: 'The story of two vampire brothers obsessed with the same girl, who bears a striking resemblance to the beautiful but ruthless vampire they knew and loved in 1864.'
                         },
                          
                         {
-                            img: './assets/Pic__10.jpg',
+                            img: 'https://cdn.onebauer.media/one/media/5d6e/896d/16ef/e621/c032/4c04/it-chapter-two-rev-2.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg',
                             img1: './assets/Pic__10.jpg',
                             name: 'It Chapter Two',
                             date: '04 Sep 2019',
-                            rating: '2.9'
+                            rating: '2.9',
+                            description: '27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call.'
                         },
                          
                         {
-                            img: './assets/Pic__11.jpg',
+                            img: 'https://www.hdwallpapers.in/download/project_power_hd-1366x768.jpg',
                             img1: './assets/Pic__11.jpg',
                             name: 'Project Power',
                             date: '14 Aug 2020',
-                            rating: '4.2'
+                            rating: '4.2',
+                            description: 'An ex-soldier, a teen and a cop collide in New Orleans as they hunt for the source behind a dangerous new pill that grants users temporary superpowers.'
                         },
                          
                         {
-                            img: './assets/Pic__12.jpg',
+                            img: 'https://www.itl.cat/pngfile/big/198-1987904_supernatural-supernatural-hd.jpg',
                             img1: './assets/Pic__12.jpg',
                             name: 'Supernatural',
                             date: '13 Sep 2005',
-                            rating: '4.5'
+                            rating: '4.5',
+                            description: 'When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their 67 Chevy Impala, battling every kind of supernatural threat they encounter along the way.'
                         },
                          
                         {
-                            img: './assets/Pic__13.jpg',
+                            img: 'https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWys7fuKa0ChvUxfJE2QuvP-jPaNLsfNP4j-kRGjzJfbr-3j-FpBozfoDEyX_J8JUhrWq0r_SLdkXVOukoyyha0arqNk.jpg?r=7c4',
                             img1: './assets/Pic__13.jpg',
-                            name: 'The Crimes That Blind',
+                            name: 'The Crimes That Bind',
                             date: '20 Aug 2020',
-                            rating: '4.5'
+                            rating: '4.5',
+                            description: 'When her son is accused of raping and trying to murder his ex-wife, Alicia embarks on a journey that will change her life forever.'
                         },
                          
                         {
-                            img: './assets/Pic__14.jpg',
+                            img: 'https://mocah.org/uploads/posts/196731-rick-grimes-1600x1200.jpg',
                             img1: './assets/Pic__14.jpg',
                             name: 'The Walking Dead',
                             date: '31 Oct 2010',
-                            rating: '4.1'
+                            rating: '4.1',
+                            description: 'Sheriff deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.'
                         },
                          
                         {
-                            img: './assets/Pic__15.jpg',
+                            img: 'https://miro.medium.com/max/1132/1*rPxWmTr9c-dTqNsNSNfPTQ.png',
                             img1: './assets/Pic__15.jpg',
                             name: 'Cadaver',
                             date: '22 Oct 2020',
-                            rating: '3.6'
+                            rating: '3.6',
+                            description: 'In the aftermath of a nuclear disaster, a starving family find hope in a charismatic hotel owner. Lured by the prospect of a free dinner, they discover that the evening entertainment blurs the lines between performance and reality. Will they wind up the spectators or the spectacle?'
                         },
                          
                         {
-                            img: './assets/Pic__16.jpg',
+                            img: 'https://static01.nyt.com/images/2020/07/09/arts/09greyhound/merlin_174157761_c06796a8-62bd-408c-8755-deb96980be66-superJumbo.jpg',
                             img1: './assets/Pic__16.jpg',
                             name: 'Greyhound',
                             date: '10 Jul 2020',
-                            rating: '3.3'
+                            rating: '3.3',
+                            description: 'A first-time captain leads a convoy of allied ships carrying thousands of soldiers across the treacherous waters of the “Black Pit” to the front lines of WW2. With no air cover protection for 5 days, the captain and his convoy must battle the surrounding enemy Nazi U-boats in order to give the allies a chance to win the war.'
                         }
                     ]">
     
@@ -175,6 +188,7 @@
                             <h2>{{ movie.name }}</h2>
                             <h4>{{ movie.date }}</h4>
                             <h4>Rating: {{ movie.rating }}</h4>
+                            <h5>{{ movie.description }}</h5>
                         </div>
                     </a>
                 </div>
@@ -186,14 +200,14 @@
             </div>
 
             <div class="Cards__2" ng-init="trailers = [
-            { img: './assets/Pic__30.jpg', name: 'Boogie Nights', info: 'Modern Trailer'},
-            { img: './assets/Pic__31.jpg', name: 'The Endless Trench', info: 'Official Trailer | Netflix'},
-            { img: './assets/Pic__32.jpg', name: 'Virgin River', info: 'Season 2 Trailer'},
-            { img: './assets/Pic__33.jpg', name: 'The Crown', info: 'Season 4 Trailer'},
-            { img: './assets/Pic__34.jpg', name: 'The Mandalorian', info: 'Season 2 Special Look'},
+            { img: './assets/Pic__30.jpg', name: 'Boogie Nights', info: 'Modern Trailer', link: 'https://www.youtube.com/watch?v=YN7pcEa83dU'},
+            { img: './assets/Pic__31.jpg', name: 'The Endless Trench', info: 'Official Trailer | Netflix', link: 'https://www.youtube.com/watch?v=p_-_MPVg968'},
+            { img: './assets/Pic__32.jpg', name: 'Virgin River', info: 'Season 2 Trailer', link: 'https://www.youtube.com/watch?v=7tAQ4CPNvY4'},
+            { img: './assets/Pic__33.jpg', name: 'The Crown', info: 'Season 4 Trailer', link: 'https://www.youtube.com/watch?v=OiXEpminPms'},
+            { img: './assets/Pic__34.jpg', name: 'The Mandalorian', info: 'Season 2 Special Look', link: 'https://www.youtube.com/watch?v=ICuqzhViWAI'},
         ]">
 
-                <div class="Card__2" ng-repeat=" trailer in trailers" ng-controller="name" ng-click="changeHome()">
+                <a ng-href="{{ trailer.link }}" class="Card__2" ng-repeat=" trailer in trailers">
                     <div class="image">
                         <img ng-src="{{ trailer.img }}" ng-alt="{{ movie.img }}">
                         <i class="fas fa-play"></i>
@@ -202,7 +216,7 @@
                         <h2>{{ trailer.name }}</h2>
                         <h4>{{ trailer.info }}</h4>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="Explore__Heading" id="extras">
@@ -211,82 +225,103 @@
 
             <div class="Cards" ng-init="free=[
             { 
+                img: 'https://image.tmdb.org/t/p/w1280/rTUYT1bTKzH2yfepjdhb3zv1AsH.jpg',
                 img1: './assets/Pic__35.jpg', 
                 name: 'The Scientist',
                 date: '21 Sep 2020', 
-                rating: '4.5'
+                rating: '4.5',
+                description: 'An unconventional scientist, struggling to care for his terminally-ill wife, embarks on a journey to develop a cure for her. However, his methods of treatment and tampering with human DNA, could lead to the extinction of humanity.'
             },
 
             {
+                img: 'https://www.itl.cat/pngfile/big/13-139160_spirited-away-movie-wallpaper-spirited-away-iphone.jpg',
                 img1: './assets/Pic__36.jpg',
                 name: 'Away',
                 date: '15 Nov 2019',
-                rating: '4.1'
+                rating: '4.1',
+                description: 'After suffering a plane crash on a mysterious island, a young man embarks on an epic journey through forests, deserts and mountains trying to escape the shadow of a huge dark spirit.'
             },
              
             {
+                img: 'https://sorryneverheardofit.files.wordpress.com/2015/05/abcs-of-death-2-julian-gilbey.jpg',
                 img1: './assets/Pic__38.jpg',
                 name: 'ABCs of Death',
                 date: '8 Mar 2013',
-                rating: '3.5'
+                rating: '3.5',
+                description: 'An ambitious anthology film featuring segments directed by over two dozen of the world leading talents in contemporary genre film. Inspired by the children educational ABC books, the film comprises 26 individual chapters, each helmed by a different director assigned a letter of the alphabet. The directors were then given free reign in choosing a word to create a story involving death.'
             },
              
             {
+                img: 'https://behindthelensonline.net/site/wp-content/uploads/2020/01/assassin-4.jpg',
                 img1: './assets/Pic__39.jpg',
                 name: 'Assassin 33 AD',
                 date: '24 Jan 2020',
-                rating: '4.5'
+                rating: '4.5',
+                description: 'When a billionaire gives a group of young scientists unlimited resources to study the science of matter transfer, the scientists unlock the secrets of time travel. But they soon find out that the project is backed by a militant extremist group, and the billionaire plans to go back in time and prove that Jesus never rose from the dead.'
             },
              
             {
+                img: 'https://bloody-disgusting.com/wp-content/uploads/2016/03/High-Tension-e1563297615257.jpg',
                 img1: './assets/Pic__40.jpg',
                 name: 'High Tension',
                 date: '18 Jun 2003',
-                rating: '4.2'
+                rating: '4.2',
+                description: 'Best friends Marie and Alexia decide to spend a quiet weekend at Alexia parents secluded farmhouse. But on the night of their arrival, the girls idyllic getaway turns into an endless night of horror.'
             },
              
             {
+                img: 'https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/kbmjn-PN6T96TQKQR-Full-Image_GalleryBackground-en-US-1600916682526._RI_.jpg',
                 img1: './assets/Pic__41.jpg',
                 name: 'The Dalton Gang',
                 date: '05 May 2020',
-                rating: '4.5'
+                rating: '4.5',
+                description: 'When their brother Frank is killed by an outlaw, brothers Bob Dalton, Emmett Dalton and Gray Dalton join their local department of sheriff. When they are cheated by the law, they turn to crime, robbing trains and anything else they can steal from over the course of two years in the early 1890s. Trying to out do Jesse James, they attempt to rob two banks at once in October of 1892, and things get ugly.'
             },
 
             {
+                img: 'https://wallpapercave.com/wp/wp4190344.jpg',
                 img1: './assets/Pic__37.jpg',
-                name: 'Fat Ass Zombies',
-                date: '18 Feb 2020',
-                rating: '2.5'
+                name: 'Train to Busan',
+                date: '18 Feb 2016',
+                rating: '2.5',
+                description: 'Martial law is declared when a mysterious viral outbreak pushes Korea into a state of emergency. Those on an express train to Busan, a city that has successfully fended off the viral outbreak, must fight for their own survival…'
             },
              
             {
+                img: 'https://m.media-amazon.com/images/M/MV5BNmY1ODI2N2ItZTEyMS00Yjg1LTg0NDgtMTk4OWM0NDI1MmJmXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg',
                 img1: './assets/Pic__42.jpg',
                 name: 'Battlefield 2025',
                 date: '07 July 2019',
-                rating: '2.9'
+                rating: '2.9',
+                description: 'Weekend campers, an escaped convict, young lovers and a police officer experience a night of terror when a hostile visitor from another world descends on a small Arizona town.'
             },
              
             {
-                img1: './assets/Pic__43.jpg',
+                img: 'https://images.alphacoders.com/831/831029.jpg',
+                img1: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/7BEY3dAb6ZVHzND1Ewmw2PTAl76.jpg',
                 name: 'The Viking War',
                 date: '15 Oct 2019',
-                rating: '4.3'
+                rating: '4.3',
+                description: 'Ingrid and her siblings are on the run from the Beserkers who have begun invading the villages, taking over, savagely using the residents on a game where they vs a Beserker, and if they win, they get to survive - only, no one ever wins. The siblings are trying to escape the Beserkers after they violently murdered and took over their town. However, the Beserkers are on their trail, and want to put them in the game.'
             },
              
             {
+                img: 'https://images.alphacoders.com/831/831029.jpg',
                 img1: './assets/Pic__43.jpg',
-                name: 'Antrum',
-                date: '13 Sep 2005',
-                rating: '4.5'
+                name: 'The Seven Dwarfs',
+                date: '25 July 2019',
+                rating: '4.1',
+                description: 'Princes who have been turned into Dwarfs seek the red shoes of a lady in order to break the spell, although it will not be easy.'
             }
         ]">
 
-                <a href="home" class="Card__1" ng-repeat="movie in free" ng-controller="name" ng-click="changeHome()">
+                <a href="#home" class="Card__1" ng-repeat="movie in free" ng-controller="movie" ng-click="showMovie()">
                     <img ng-src="{{ movie.img1 }}" ng-alt="{{ movie.img }}">
                     <div>
                         <h2>{{ movie.name }}</h2>
                         <h4>{{ movie.date }}</h4>
                         <h4>{{ movie.rating }}</h4>
+                        <h5>{{ movie.description }}</h5>
                     </div>
                 </a>
             
@@ -298,75 +333,94 @@
 
             <div class="Cards" ng-init="trending=[
             { 
+                img: 'https://c4.wallpaperflare.com/wallpaper/844/612/45/the-mandalorian-star-wars-hd-wallpaper-preview.jpg',
                 img1: './assets/Pic__44.jpg', 
                 name: 'The Mandalorian', 
                 date: '12 Nov 2019',
-                rating: '4.5'
+                rating: '4.5',
+                description: 'After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.'
             },
 
             {
+                img: 'https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/09/10/his-house-movie-HD-Stills-6.jpg?quality=80&zoom=1&ssl=1',
                 img1: './assets/Pic__45.jpg',
                 name: 'His House',
                 date: '23 Jan 2020',
-                rating: '4.3'
+                rating: '4.3',
+                description: 'After making a harrowing escape from war-torn South Sudan, a young refugee couple struggle to adjust to their new life in a small English town that has an unspeakable evil lurking beneath the surface.'
             },
              
             {
+                img: 'https://rogermooresmovienation.files.wordpress.com/2020/10/rogue.jpeg',
                 img1: './assets/Pic__46.jpg',
                 name: 'Rogue City',
                 date: '23 Oct 2020' ,
-                rating: '4.1'
+                rating: '4.1',
+                description: 'Caught in the crosshairs of police corruption and Marseille warring gangs, a loyal cop must protect his squad by taking matters into his own hands.'
             },
              
             {
+                img: 'pluggedin.com/wp-content/uploads/2020/10/Holidate-WP-1024x587.jpg',
                 img1: './assets/Pic__47.jpg',
                 name: 'Holidate',
                 date: '02 May 2018',
-                rating: '4.2'
+                rating: '4.2',
+                description: 'Fed up with being single on holidays, two strangers agree to be each others platonic plus-ones all year long, only to catch real feelings along the way.'
             },
              
             {
+                img: 'https://image.tmdb.org/t/p/w780/1NL0RA9kOd5Y9z23TN6x2GCiTTm.jpg',
                 img1: './assets/Pic__48.jpg',
                 name: 'Borat',
                 date: '04 Oct 2020',
-                rating: '4.0'
+                rating: '4.0',
+                description: '14 years after making a film about his journey across the USA, Borat risks life and limb when he returns to the United States with his young daughter, and reveals more about the culture, the COVID-19 pandemic, and the political elections.'
             },
              
             {
+                img: 'https://miro.medium.com/max/3840/1*rJwgP3MlEiM68x0YVE8GNg.jpeg',
                 img1: './assets/Pic__49.jpg',
                 name: 'The Witches',
                 date: '28 Aug 2020',
-                rating: '4.5'
+                rating: '4.5',
+                description: 'In late 1967, a young orphaned boy goes to live with his loving grandma in the rural Alabama town of Demopolis. As the boy and his grandmother encounter some deceptively glamorous but thoroughly diabolical witches, she wisely whisks him away to a seaside resort. Regrettably, they arrive at precisely the same time that the worlds Grand High Witch has gathered.'
             },
              
             {
+                img: 'https://www.cearaemoff.com.br/images/2020/09/05/disney-mulan-hd-wallpaper-preview_large.jpg',
                 img1: './assets/Pic__50.jpg',
                 name: 'Mulan',
                 date: '10 Sep 2020',
-                rating: '3.9'
+                rating: '3.9',
+                description: 'When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.'
             },
              
             {
+                img: 'https://wallpapercave.com/wp/wp7779749.jpg',
                 img1: './assets/Pic__51.jpg',
                 name: 'The Craft: Legacy',
                 date: '04 Sep 2019',
-                rating: '3.8'
+                rating: '3.8',
+                description: 'An eclectic foursome of aspiring teenage witches get more than they bargained for as they lean into their newfound powers.'
             },
              
             {
+                img: 'https://media.gq-magazine.co.uk/photos/5f9bee7f2535285ef8cb6bdd/master/pass/Truth%20Seekers.jpg',
                 img1: './assets/Pic__52.jpg',
                 name: 'Truth Seekers',
                 date: '30 Oct 2020',
-                rating: '4.1'
+                rating: '4.1',
+                description: 'A ghost-hunting duo team up to uncover and film paranormal sightings across the U.K. and share their adventures on an online channel. Their supernatural experiences grow more frequent, terrifying, and even deadly as the pair begin to uncover a conspiracy that could threaten the entire human race.'
             }
                 ]">
 
-                <a href="home" class="Card__1" ng-repeat="movie in trending" ng-controller="name" ng-click="changeHome()">
+                <a href="#home" class="Card__1" ng-repeat="movie in trending" ng-controller="name" ng-click="changeHome()">
                     <img ng-src="{{ movie.img1 }}" ng-alt="{{ movie.img }}">
                     <div>
                         <h2>{{ movie.name }}</h2>
                         <h4>{{ movie.date }}</h2>
                         <h4>{{ movie.rating }}</h2>
+                        <h5>{{ movie.description }}</h5>
                         
                     </div>
                 </a>
@@ -374,14 +428,14 @@
             </div>
             
         </div>
-    
-    <section class="Footer" id="support">
+
+        <section class="Footer" id="support">
             <div class="Footer--left">
                 <a href="#"><img src="./assets/Logo.svg" alt=""></a>
             </div>
 
             <div class="Footer--middle">
-                <img src="./assets/Logo.svg" class="footer__logo">
+                <!-- <img src="./assets/Logo.svg" class="footer__logo"> -->
             </div>
 
             <div class="Footer--right">
