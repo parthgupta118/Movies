@@ -11,4 +11,3 @@ Main Components of the website are:
 3. Latest Trailers Page
 4. Trending Movies Page
 5. Movie Info Page
-6. Songs Page
